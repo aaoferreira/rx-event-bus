@@ -8,5 +8,5 @@ env:
 after_success:
   # test coverage reporting
   - bash <(curl -s https://codecov.io/bash)
-  # deploy snapshots to Maven central, only on develop branch
-  - "[[ $TRAVIS_BRANCH == \"develop\" ]] && mvn --settings settings.xml -DskipTests=true -Dossrh.user=$OSSRH_USER -Dossrh.password=$OSSRH_PASSWORD -B deploy"
+  # deploy snapshots to Maven central, only on develop or master branch
+  - "[[ $TRAVIS_BRANCH == \"develop\" || $TRAVIS_BRANCH == \"master\" ]] && mvn --settings settings.xml -DskipTests=true -Dossrh.user=$OSSRH_USER -Dossrh.password=$OSSRH_PASSWORD -B deploy"
