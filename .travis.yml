@@ -9,6 +9,7 @@ after_success:
   # test coverage reporting
   - bash <(curl -s https://codecov.io/bash)
   # deploy snapshots to Maven central, only on develop or master branch
+  # https://graysonkoonce.com/getting-the-current-branch-name-during-a-pull-request-in-travis-ci/
   - "export BRANCH=$(if [ \"$TRAVIS_PULL_REQUEST\" == \"false\" ]; then echo $TRAVIS_BRANCH; else echo $TRAVIS_PULL_REQUEST_BRANCH; fi)"
-  - "echo \"TRAVIS_BRANCH=$TRAVIS_BRANCH, PR=$PR, BRANCH=$BRANCH\""
+  - "echo \"TRAVIS_BRANCH=$TRAVIS_BRANCH, PR=$TRAVIS_PULL_REQUEST, BRANCH=$BRANCH\""
   - "[[ $BRANCH == \"develop\" || $BRANCH == \"master\" ]] && mvn --settings settings.xml -DskipTests=true -Dossrh.user=$OSSRH_USER -Dossrh.password=$OSSRH_PASSWORD -B deploy"
