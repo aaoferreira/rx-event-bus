@@ -32,7 +32,7 @@
         <junit-jupiter.version>5.3.1</junit-jupiter.version>
         <logback.version>1.2.3</logback.version>
         <lombok.version>1.18.2</lombok.version>
-        <rxjava2.version>2.2.2</rxjava2.version>
+        <rxjava2.version>2.2.19</rxjava2.version>
         <slf4j.version>1.7.25</slf4j.version>
     </properties>
 
