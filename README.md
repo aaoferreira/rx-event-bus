@@ -6,7 +6,7 @@
 Simple, reactive, in-memory event bus
 
 [badge-build-image]: https://img.shields.io/travis/aaoferreira/rx-event-bus/develop.svg
-[badge-build-url]: https://travis-ci.org/aaoferreira/rx-event-bus
+[badge-build-url]: https://travis-ci.com/aaoferreira/rx-event-bus
 
 [badge-coverage-image]: https://img.shields.io/codecov/c/github/aaoferreira/rx-event-bus/develop.svg
 [badge-coverage-url]: https://codecov.io/github/aaoferreira/rx-event-bus
