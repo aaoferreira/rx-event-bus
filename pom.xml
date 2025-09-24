@@ -28,7 +28,7 @@
         <maven-surefire-plugin.version>3.5.3</maven-surefire-plugin.version>
 
         <!-- Dependency versions -->
-        <assertj.version>3.27.4</assertj.version>
+        <assertj.version>3.27.6</assertj.version>
         <junit-jupiter.version>5.13.4</junit-jupiter.version>
         <logback.version>1.5.18</logback.version>
         <lombok.version>1.18.38</lombok.version>
